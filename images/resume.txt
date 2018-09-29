@@ -1,1 +1,125 @@
-This will eventually be my resume. Just a placeholder for now
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Dylan P.}{Jackson}{ % Your name
+\urlstyle{same}\url{dylanjackson.me} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:frprdjackson@gmail.com}{frprdjackson@gmail.com} | 484.832.4162 % Your contact information
+\\
+{Objective: Summer 2019 Co-op}
+}
+
+%----------------------------------------------------------------------------------------
+%	Top : Education & Skills
+%----------------------------------------------------------------------------------------
+
+%------
+% Education
+%------
+
+\begin{minipage}[b]{.69\textwidth}
+
+\section{Education}
+
+\subsection{Rochester Institute of Technology}
+
+\descript{BS in Computer Science}
+\location{2017 - Present | Rochester, NY | Cum. GPA: 3.38}
+\descript{Computer Science House : Active Member}
+\descript{Honors Program}
+\descript{AI Club : Secretary}
+\descript{Outing Club : Public Relations}
+
+\end{minipage}
+\begin{minipage}[b]{0.3\textwidth}
+
+\section{Skills}
+
+\subsection{Proficient}
+\location{Python | Java | IntelliJ  \\ PyCharm | Vim | \\Macos/Linux | NLTK | Cinema4D \linebreak }
+
+\subsection{Experienced}
+\location{C | C++ | HTML | JavaScript | CS}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Bottom : Projects & Experience
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{1\textwidth}
+
+%------
+% Projects
+%------
+\section{Projects}
+
+\subsection{K. L. A. M. P.	|	C/C++}
+\begin{itemize}
+\item Designed a program to communicate with an Arduino to dynamically alter the display of a 32x32 LED board to display various logos and texts, both static and animated
+\item Designed and 3D printed a holster for the board so that it can be mounted onto a desk lamp in place of the lamp head
+\item Integrated a button so that the display will change based off of input rather than just run automatically
+\end{itemize}
+
+\subsection{24-Hour-Power | C/C++}
+\begin{itemize}
+\item Designed a program to communicate with an Arduino to shift along an array of 24 colors, and display one for each hour of the day onto an LED strip
+\item The current color flows throughout the strip, fading to and from black on a loop as to mimic water
+\item Every hour, the current color slowly shifts into the new color
+\end{itemize}
+
+\subsection{Natural Language Processing Demos | Python}
+\begin{itemize}
+\item Wrote various programs to perform basic implementations of complex NLP concepts, such as Tokenizing, Stemming, Named Entities, Stopwords, and others
+\item The goal of these is to become familiar with NLP standards in order to implement them with Machine Learning
+\end{itemize}
+
+
+%------
+% Experience
+%------
+\section{Experience}
+\subsection{Rochester Institute of Technology | SI Leader}
+\location{August 2018 - Present | Rochester, NY}
+\begin{itemize}
+\item Work with students in the Python based Computer Science I Course to approach the content in a more practical sense, improving their comfortability with the language and course
+\item Refining understanding of Python because of responsibility to explain concepts to other students
+\item Develop two one hour weekly study sessions where students go over practice problems and discuss concepts in Python
+\end{itemize}
+
+\subsection{Rochester Institute of Technology | New Student Orientation Leader}
+\location{August 2018 | Rochester, NY}
+\begin{itemize}
+\item Lead a group of New Students and introduced them into the RIT community, leading them through various icebreakers, social and academic activities
+\item Developed strong leadership, communication, and team building skills \linebreak \linebreak
+\end{itemize}
+
+\end{minipage}
+
+\end{document}
