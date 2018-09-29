@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "open_serif";
+  src: url('/Users/Suave/Desktop/MacPack 3.0/Website/resources/OpenSerif-Book.ttf');
+}
+
+#profile{
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.icons_class{
+
+}
+
+#name{
+  float:center;
+  position:fixed;
+  margin-left: 25%;
+  font-size: 100px;
+  margin-top: 25px;
+}
+
+#desciption{
+  float:center;
+  position:fixed;
+  margin-left: 25%;
+  font-size: 35px;
+  margin-top: 160px;
+}
+
+#icons{
+  margin-left: 90px;
+}
+
+#header{
+  font-family: "open_serif";
+  background-color: #b3cccc;
+  color: #f0f5f5;
+}
