@@ -29,7 +29,7 @@
 \lastupdated % Print the Last Updated text at the top right
 
 \namesection{Dylan P.}{Jackson}{ % Your name
-\urlstyle{same}\url{dylanjackson.me} \\ % Your website, LinkedIn profile or other web address
+\urlstyle{same}\href{http://dylanjackson.me}{dylanjackson.me} \\ % Your website, LinkedIn profile or other web address
 \href{mailto:frprdjackson@gmail.com}{frprdjackson@gmail.com} | 484.832.4162 % Your contact information
 \\
 {Objective: Summer 2019 Co-op}
