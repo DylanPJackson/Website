@@ -20,7 +20,7 @@
   margin-top: 25px;
 }
 
-#desciption{
+#status{
   float:center;
   position:fixed;
   margin-left: 25%;
@@ -36,4 +36,18 @@
   font-family: "open_serif";
   background-color: #303030;
   color: #f0f5f5;
+}
+
+#project_timeline, #project_content{
+  font-family: "open_serif";
+  background-color: #303030;
+  color: #f0f5f5;
+}
+
+.project_names{
+    font-size: 25px;
+}
+
+.project_dates{
+    font-size: 15px;
 }
