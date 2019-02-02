@@ -1,6 +1,6 @@
 @font-face {
   font-family: "open_serif";
-  src: url('/home/dylan/repos/Website/resources/OpenSerif-Book.ttf');
+  src: url('/resources/OpenSerif-Book.ttf');
 }
 
 #profile{
@@ -69,3 +69,5 @@ body {
 .fa:hover,.fa:visited,.fa:active,.fa:link{
     color:white;
 }
+
+
