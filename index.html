@@ -6,13 +6,43 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/main.css">
-  </head>
-  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+   
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+        } // End if
+        });
+    });
+    </script>
+    </head>
+    <body>
     <div class="container-fluid">
         <div class="row">
             <div id="header">
-                <center><h1 id="name">Dylan P. Jackson</h1></center>
-                <center><h3 id="status">Life is swell</h3></center>
+                <h1 id="name">Dylan P. Jackson</h1>
+                <h3 id="status">Status: Life is swell</h3>
+                <img id="about_me_img" src="images/about_me.png" height=25 width=25>
+                <!-- Huge shoutout to my roommate Sam for making this truly epic icon "about_me.png" His Adobe
+                Illustrator skills are incomparable to the average man -->
                 <img id="profile" src="images/ender.png" height=250 width=250>
                 <br>
                 <div id="icons">
@@ -21,24 +51,56 @@
                     <a href="https://www.linkedin.com/in/dylan-jackson-86a2a7138/" class="fa" target="_blank"> <i class="fa fa-linkedin" aria-hidden="false" style="font-size:23px"></i> </a>
                     <a href="https://soundcloud.com/user-252717524" target="_blank" class="fa"> <i class="fa fa-soundcloud" aria-hidden="false" style="font-size:23px"></i> </a>
                 </div>
+                <h4 id="about_me">About Me</h4> 
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
         <hr>
-        <div class="row"> 
+        <div class="row">
             <div class="col-sm-3" id="project_timeline"> 
-                <ul>
-                    <li>
-                    <p class="project_names">Example_Project_1</p>
+                <div class="sidenav" id="navbar">
                     <ul>
                         <li>
-                           <p class="project_dates">2019-02-01</p> 
-                        </li>
+                            <a id="Projecct_Example_1" href="#Project_Example_1"><p class="project_names">State of site</p></a>
+                        <ul>
+                            <li>
+                                <p class="project_dates">2019-02-03</p> 
+                            </li>
+                        </ul>
+                            <a id="Projecct_Example_2" href="#Project_Example_2"><p class="project_names">Example_Project_2</p></a>
+                        <ul>
+                            <li>
+                                <p class="project_dates">0000-00-00</p>
+                            </li>
+                        </ul>
+                            <a id="Projecct_Example_3" href="#Project_Example_3"><p class="project_names">Example_Project_3</p></a>
+                        <ul>
+                            <li>
+                                <p class="project_dates">0000-00-00</p>
+                            </li>
+                        </ul>
+                        </li> 
                     </ul>
-                    </li>
-                </ul> 
+                </div> 
             </div>
             <div class="col-sm-9" id="project_content">
-                <h2>Example_Project_1</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante libero, consequat sit amet pretium in, pharetra ac nibh. Donec vitae volutpat urna. Aliquam sapien tellus, consectetur in dui sed, tristique hendrerit justo. Proin ex augue, blandit non fringilla ultricies, facilisis vitae quam. Pellentesque mollis nisi non leo lacinia consequat. Sed vulputate dolor sit amet posuere convallis. Suspendisse sodales commodo mi eu varius. Quisque in eros sit amet enim vehicula ornare in ut urna. Morbi eget vestibulum massa. Fusce eleifend magna sed ante molestie, vitae lobortis turpis volutpat. Suspendisse rhoncus efficitur porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc magna nisi, egestas eu pulvinar in, fringilla id ex. Donec eu auctor enim.
+            <a id="Project_Example_1"><h2>State of site</h2></a><p>Hello there! This is to document my first major update to the site. The current setup aims to have all projects accessible by the navbar on the left, where their names and dates are displayed. The content of those projects is available on the right side of the page, where you are currently reading! If you click on a project name/site update on the left hand column, the page will autoscroll to the top of its description. That is why I have chosen to keep the Example_Project_2 and 3, so that this effect is presentable. I have also made the side navbar stay in place until you scroll past it, at which point it begins to scroll with the page. The top left section of the page contains an image of me, along with links to my resume, GitHub, LinkedIn, and Soundcloud. The top middle section contains my name, a status of sorts, and a placeholder for an About Me page. The plan for the About Me is such that on click, the description will scroll up from the bottom and blur out the rest of the page. It will probably have some light-hearted commentary on myself, along with another picture. That will be the next update to the site. <br> <br> Putting this together has taught me a lot about not only HTML, CSS, and JavaScript, but also what it is like to work in an unfamiliar field. I am not a web nev by any means, nor have I ever taken a class in website development. I had to learn how to work with these tools through my own initiative. I had to admit that I knew absolutely nothing about something, and rely on whatever I could find, as well as the help of my friends. I think that is the most important thing to show from creating this. Not what has been created, but how it was created. Too often people shy away from doing things just because it's not "what they do". Again, I am not a website developer, but I certainly have developed a website. More good things coming soon.   
+</p>
+        <hr>
+            <a id="Project_Example_2"><h2>Example_Project_2</h2></a><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante libero, consequat sit amet pretium in, pharetra ac nibh. Donec vitae volutpat urna. Aliquam sapien tellus, consectetur in dui sed, tristique hendrerit justo. Proin ex augue, blandit non fringilla ultricies, facilisis vitae quam. Pellentesque mollis nisi non leo lacinia consequat. Sed vulputate dolor sit amet posuere convallis. Suspendisse sodales commodo mi eu varius. Quisque in eros sit amet enim vehicula ornare in ut urna. Morbi eget vestibulum massa. Fusce eleifend magna sed ante molestie, vitae lobortis turpis volutpat. Suspendisse rhoncus efficitur porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc magna nisi, egestas eu pulvinar in, fringilla id ex. Donec eu auctor enim.
 
 Aliquam maximus convallis volutpat. Nunc sollicitudin lacinia dolor a feugiat. Nullam eu magna malesuada, bibendum diam ut, posuere elit. Proin posuere aliquam libero facilisis fermentum. Nam venenatis risus vitae nisi imperdiet molestie ut in dolor. Maecenas auctor massa est, in finibus tortor vulputate at. In in mattis nisi, vel tempus magna. Curabitur nec nibh nibh. Aliquam tempus dui lorem, ac dapibus enim dictum eget. Nullam pulvinar orci lacus, non aliquet erat dictum eu. Nam quis efficitur justo. Pellentesque quis posuere diam.
 
@@ -48,9 +110,34 @@ Sed iaculis porttitor quam, nec pretium risus egestas in. Praesent imperdiet tor
 
 Duis dignissim felis eget enim eleifend mattis. Aenean porta egestas commodo. Nulla facilisi. Pellentesque finibus lobortis justo, eu maximus lectus congue sit amet. Vestibulum tellus ante, commodo id rutrum at, pulvinar eget nisl. Pellentesque lacus lacus, aliquet vestibulum rhoncus non, venenatis nec augue. Integer in purus a urna scelerisque semper sed sit amet lorem. Aliquam at urna viverra, feugiat lorem nec, rutrum neque. Nunc scelerisque dui turpis, a consectetur metus tristique sit amet. Curabitur id volutpat arcu. Suspendisse sed maximus purus. Aliquam erat volutpat. Sed vitae egestas dui. Morbi rhoncus enim sapien, nec interdum enim suscipit et. Vestibulum sed ipsum id nulla facilisis facilisis.
 </p>
-        <hr>
+    <hr>
+        <a id="Project_Example_3"><h2>Example_Project_3</h2></a><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante libero, consequat sit amet pretium in, pharetra ac nibh. Donec vitae volutpat urna. Aliquam sapien tellus, consectetur in dui sed, tristique hendrerit justo. Proin ex augue, blandit non fringilla ultricies, facilisis vitae quam. Pellentesque mollis nisi non leo lacinia consequat. Sed vulputate dolor sit amet posuere convallis. Suspendisse sodales commodo mi eu varius. Quisque in eros sit amet enim vehicula ornare in ut urna. Morbi eget vestibulum massa. Fusce eleifend magna sed ante molestie, vitae lobortis turpis volutpat. Suspendisse rhoncus efficitur porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc magna nisi, egestas eu pulvinar in, fringilla id ex. Donec eu auctor enim.
+
+Aliquam maximus convallis volutpat. Nunc sollicitudin lacinia dolor a feugiat. Nullam eu magna malesuada, bibendum diam ut, posuere elit. Proin posuere aliquam libero facilisis fermentum. Nam venenatis risus vitae nisi imperdiet molestie ut in dolor. Maecenas auctor massa est, in finibus tortor vulputate at. In in mattis nisi, vel tempus magna. Curabitur nec nibh nibh. Aliquam tempus dui lorem, ac dapibus enim dictum eget. Nullam pulvinar orci lacus, non aliquet erat dictum eu. Nam quis efficitur justo. Pellentesque quis posuere diam.
+
+Morbi scelerisque nunc at orci efficitur vehicula. Nunc eleifend scelerisque dui, placerat fermentum sapien fermentum in. Etiam dapibus vulputate risus et porttitor. Aliquam egestas, ex quis vehicula faucibus, ex est commodo diam, in mattis sem felis et justo. Nunc rutrum nunc sed justo laoreet, nec suscipit leo rutrum. Quisque consectetur leo scelerisque nulla scelerisque lobortis. Sed vitae ex sodales, volutpat ligula a, tempor lorem. Cras tempus eleifend varius. Aenean elit dolor, auctor in massa ut, fringilla dapibus mauris. Nulla sit amet aliquet nulla, et suscipit magna. Integer scelerisque purus sed eros auctor, nec pharetra ante rhoncus.
+
+Sed iaculis porttitor quam, nec pretium risus egestas in. Praesent imperdiet tortor quis leo ultrices volutpat. Curabitur semper porttitor nunc, a sollicitudin lacus fermentum ut. Donec venenatis lorem enim, tincidunt blandit ipsum imperdiet id. Morbi purus purus, consectetur eget viverra vestibulum, dignissim a tortor. Nulla finibus ipsum erat, quis tempor enim blandit eget. Quisque congue magna purus. Phasellus fringilla enim eu mauris convallis egestas. Donec non augue finibus, pulvinar nisl sed, semper tortor. Praesent efficitur elit ligula, quis imperdiet sapien eleifend vel. Curabitur venenatis, urna varius blandit mattis, quam mauris pharetra ex, ut tempor turpis odio sit amet ex. Pellentesque et lectus sit amet risus varius sodales nec ut orci. Mauris vel dui eget est cursus hendrerit a id dui. Integer sit amet sapien eleifend, fermentum orci et, mollis arcu.
+
+Duis dignissim felis eget enim eleifend mattis. Aenean porta egestas commodo. Nulla facilisi. Pellentesque finibus lobortis justo, eu maximus lectus congue sit amet. Vestibulum tellus ante, commodo id rutrum at, pulvinar eget nisl. Pellentesque lacus lacus, aliquet vestibulum rhoncus non, venenatis nec augue. Integer in purus a urna scelerisque semper sed sit amet lorem. Aliquam at urna viverra, feugiat lorem nec, rutrum neque. Nunc scelerisque dui turpis, a consectetur metus tristique sit amet. Curabitur id volutpat arcu. Suspendisse sed maximus purus. Aliquam erat volutpat. Sed vitae egestas dui. Morbi rhoncus enim sapien, nec interdum enim suscipit et. Vestibulum sed ipsum id nulla facilisis facilisis.
+</p>
+    <hr>
             </div>
         </div>
     </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("navbar");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > (sticky + 330)) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
   </body>
 </html>
